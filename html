@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=1277, height=841" />
+  <title>Widget Zapping Clips Twitch</title>
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://use.typekit.net/fco0nxi.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div id="video-container">
+    <iframe 
+      id="clip-player" 
+      src="" 
+      frameborder="0"
+      allow="autoplay; fullscreen"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <div id="info-container">
+    <div id="title">Titre du clip</div>
+    <div>
+      <span id="creator">Créateur : </span>
+      <span id="date">Date : </span>
+      <span id="views">Vues : </span>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
