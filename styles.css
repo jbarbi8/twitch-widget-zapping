@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  width: 1277px;
+  height: 841px;
+  background: #111;
+  color: white;
+  overflow: hidden;
+  font-family: "DM Sans", sans-serif;
+}
+
+#video-container {
+  width: 1277px;
+  height: 712.86px;
+}
+
+iframe {
+  width: 1277px;
+  height: 712.86px;
+  border: none;
+}
+
+#info-container {
+  width: 1277px;
+  height: 128px;
+  background: #FDFAF4;
+  padding: 10px 20px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 2px;
+  color: #FC3085;
+  font-family: "obviously", sans-serif;
+}
+
+#creator, #date, #views {
+  font-size: 18px;
+  color: #018F8C;
+}
