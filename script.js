@@ -57,15 +57,7 @@ async function fetchClips() {
 // ✅ Affiche un clip dans l’iframe et met à jour les infos
 function showClip(index) {
   const clip = clips[index];
-
-  const parents = [
-    "streamelements.com",
-    "widgets.streamelements.com",
-    "obs.streamelements.com",
-    "localhost",
-    window.location.hostname
-  ];
-  const parentParams = parents.map(p => `parent=${p}`).join("&");
+  const parentDomain = "tonpseudo.github.io";
 
   // Version clips
   const iframeSrc = `https://clips.twitch.tv/embed?clip=${clip.slug}&${parentParams}&autoplay=true&muted=true`;
