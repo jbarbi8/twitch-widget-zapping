@@ -43,3 +43,23 @@ iframe {
   font-size: 18px;
   color: #018F8C;
 }
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 500px; /* ou la taille que tu veux pour ton widget */
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: -100px;   /* décale vers le haut */
+  left: -200px;  /* décale vers la gauche */
+  width: 150%;   /* zoom horizontal */
+  height: 150%;  /* zoom vertical */
+  transform: scale(1.2); /* zoom uniforme */
+  transform-origin: center;
+  pointer-events: none; /* empêche clics/contrôles */
+}
+
