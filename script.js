@@ -112,7 +112,7 @@ function showClip(i) {
   dateEl.textContent    = "Date : " + clip.date;
   viewsEl.textContent   = "Vues : " + clip.views;
 
-  // Quand la vidéo se termine, on passe à la suivante
+  // Quand la vidéo se termine, on passe à la suivantee
   player.onended = () => {
     clearTimeout(fallbackTimer);
     currentIndex = (i + 1) % clips.length;
