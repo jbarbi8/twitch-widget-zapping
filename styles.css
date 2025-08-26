@@ -43,3 +43,22 @@ iframe {
   font-size: 18px;
   color: #018F8C;
 }
+
+/* Assure la bonne taille et un recadrage propre */
+#video-container {
+  width: 1277px;
+  height: 712.86px;
+  position: relative;
+  overflow: hidden;
+  background: #000;
+}
+
+/* Remplace ta règle iframe par celle-ci pour la balise video */
+#clip-player {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;     /* zoom/recadrage sans bandes noires */
+  background: #000;
+  border: none;
+}
